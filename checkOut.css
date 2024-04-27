@@ -147,7 +147,7 @@ body {
 .overlay {
     position:absolute;
     display: flex;
-    align-items: center; /* Відцентровуємо елементи по вертикалі */
+    align-items: center; 
     justify-content: center; 
     top:0;
     left: 0;
@@ -211,7 +211,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.6s, border 0.3s; /* об'єднані переходи */
+    transition: background-color 0.6s, border 0.3s; 
 }
 
 .cart .btnCheck button:hover {
