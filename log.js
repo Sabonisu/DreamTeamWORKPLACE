@@ -26,7 +26,7 @@ homeNav.addEventListener('click', () => {
 });
 
 function toHomePage() {
-    var homePage = "indexmain1.html";
+    var homePage = "indexmain.html";
     window.location.href = homePage;
 };
 

@@ -58,14 +58,13 @@ header{
     transition: 0.5s;
 }
 
-.profile{
-    display: flex;
+.profile1, .profile2{
     align-items: center;
     column-gap: 0.5rem;
     cursor: pointer;
 }
 
-.profile img{
+.profile1 img, .profile2 img{
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -73,11 +72,22 @@ header{
     border-radius: 50%;
 }
 
-.profile span{
-    font-size: 13px;
+.profile1 span, .profile2 span{
+    font-size: 15px;
     font-weight: 500;
 }
-
+.profile1{
+    display:flex;
+}
+.profile2{
+    display:none;
+}
+.logged_in .profile1 {
+    display: none;
+}
+.logged_in .profile2 {
+    display: flex;
+}
 .logo{
     display: flex;
     align-items: center;

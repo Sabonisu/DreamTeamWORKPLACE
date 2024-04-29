@@ -62,4 +62,3 @@ function toCustomersPage() {
     window.location.href = customersPage;
 }
 
-

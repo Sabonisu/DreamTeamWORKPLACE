@@ -9,29 +9,31 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Responsive Fruits And Vegetables Website</title>
+        <!-- Navbar-->
+        <header>
+            <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
+            <!--Menu Icon-->
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <!--Nav List-->
+            <ul class="navbar">
+                <li><a href="#home" class="homeNav" id="navActive">Home</a></li>
+                <li><a href="#categories" class="categoriesNav" id="">Categories</a></li>
+                <li><a href="#products" class="productsNav" id="">Products</a></li>
+                <li><a href="#about" class="aboutNav" id="">About</a></li>
+                <li><a href="#customers" class="customersNav" id="">Customers</a></li>
+            </ul>
+            <script src="header.js"></script>
+            <!--Profile-->
+            <div class="profile">
+                <button>
+                <ii class='bx bx-user-circle' ></ii>
+                <span>Login/sign in</span>
+                <i class='bx bx-caret-down'></i>
+            </button>
+            </div>
+        </header>
 </head>
 <body>
-    <!-- Navbar-->
-    <header>
-        <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
-        <!--Menu Icon-->
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <!--Nav List-->
-        <ul class="navbar">
-            <li><a href="#home" class="home-active">Home</a></li>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#customers">Customers</a></li>
-        </ul>
-        <!--Profile-->
-        <div class="profile">
-            <ii class='bx bx-user-circle' ></ii>
-            <span><a href="login.html">Login/sign in</a></span>
-            <i class='bx bx-caret-down'></i>
-            
-        </div>
-    </header>
     <!--Home-->
     <section class="home swiper" id="home">
         <div class="swiper-wrapper">
