@@ -3,6 +3,7 @@ let categoriesNav = document.querySelector('.categoriesNav');
 let productsNav = document.querySelector('.productsNav');
 let aboutNav = document.querySelector('.aboutNav');
 let customersNav = document.querySelector('.customersNav');
+let login_button = document.querySelector('.profile1');
 
 const navLinks = document.querySelectorAll('.navbar li a');
 navLinks.forEach(link => {
@@ -15,6 +16,8 @@ navLinks.forEach(link => {
         link.setAttribute('id', 'navActive');
     });
 });
+
+
 
 
 homeNav.addEventListener('click', () => {
@@ -35,6 +38,10 @@ aboutNav.addEventListener('click', () => {
 
 customersNav.addEventListener('click', () => {
     toCustomersPage();
+});
+
+customersNav.addEventListener('click', () => {
+    toLogIn();
 });
 
 function toHomePage() {
@@ -62,3 +69,7 @@ function toCustomersPage() {
     window.location.href = customersPage;
 }
 
+function toLogIn() {
+    var customersPage = "login.html";
+    window.location.href = customersPage;
+}
