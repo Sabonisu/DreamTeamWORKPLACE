@@ -2,6 +2,10 @@
 // let passwordInput = document.querySelector('.passwordInput');
 let homeNav = document.querySelector('.btn');
 
+
+    // Якщо значення не встановлене, встановлюємо його в false
+
+
 // emailInput.addEventListener('input', toggleButton);
 // passwordInput.addEventListener('input', toggleButton);
 
@@ -17,6 +21,7 @@ let homeNav = document.querySelector('.btn');
 // }
 
 homeNav.addEventListener('click', () => {
+    localStorage.setItem('isLoggedIn', true);
     // const email = emailInput.value.trim();
     // const password = passwordInput.value.trim();
 
@@ -24,6 +29,8 @@ homeNav.addEventListener('click', () => {
         toHomePage();
     // }
 });
+
+
 
 function toHomePage() {
     var homePage = "indexmain.html";

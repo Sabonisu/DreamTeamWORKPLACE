@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Отримуємо посилання на елемент хедера
+    var header = document.querySelector('header');
+
+    // Перевіряємо, чи користувач увійшов, зчитуючи дані з localStorage
+    var isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    // Перевіряємо, чи користувач увійшов
+    if (isLoggedIn === 'true') {
+        // Додаємо клас "logged_in" до хедера
+        header.classList.add('logged_in');
+    }
+});
+
 let homeNav = document.querySelector('.homeNav');
 let categoriesNav = document.querySelector('.categoriesNav');
 let productsNav = document.querySelector('.productsNav');
@@ -16,7 +30,6 @@ navLinks.forEach(link => {
         link.setAttribute('id', 'navActive');
     });
 });
-
 
 
 
