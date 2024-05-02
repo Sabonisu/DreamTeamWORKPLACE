@@ -33,7 +33,7 @@ homeNav.addEventListener('click', () => {
 
 
 function toHomePage() {
-    var homePage = "indexmain.html";
+    var homePage = "index.html";
     window.location.href = homePage;
 };
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylesCart.css">
     <link rel="stylesheet" href="temp.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="сart.css">
+    <link rel="stylesheet" href="cartMain.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Responsive Fruits And Vegetables Website</title>
@@ -38,7 +38,7 @@
 
     <div class="mainC">
             <div class="spaceTemp">
-            <button class="btnTemp">Кнопка</button>
+            <button class="btnTemp" onclick="body.classList.toggle('showCart');">Кнопка</button>
             </div>
             <!--Footer-->
             <selection class="footer" id="footer">
@@ -80,7 +80,7 @@
             <div class="copyright">
                 <p>&#169; CarpoolVenom All Right Reserved.</p>
             </div>
-        <div class="shadow">
+        <div class="shadow" onclick="body.classList.toggle('showCart');">
         </div>
     </div>
     <div class="cartTab">
@@ -132,6 +132,7 @@
     <!--Link To JS-->
     <script src="main.js"></script>
     <script src="header.js"></script>
+    <script src="cartMain.js"></script>
 
 </body>
 

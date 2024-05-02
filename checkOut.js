@@ -5,6 +5,6 @@ check.addEventListener('click',() => {
 });
 
 function toHomePage() {
-    var homePage = "indexmain.html#home";
+    var homePage = "index.html#home";
     window.location.href = homePage;
 };

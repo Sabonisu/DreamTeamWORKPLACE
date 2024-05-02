@@ -17,7 +17,6 @@ let categoriesNav = document.querySelector('.categoriesNav');
 let productsNav = document.querySelector('.productsNav');
 let aboutNav = document.querySelector('.aboutNav');
 let customersNav = document.querySelector('.customersNav');
-let login_button = document.querySelector('.profile1');
 
 const navLinks = document.querySelectorAll('.navbar li a');
 navLinks.forEach(link => {
@@ -53,32 +52,28 @@ customersNav.addEventListener('click', () => {
     toCustomersPage();
 });
 
-customersNav.addEventListener('click', () => {
-    toLogIn();
-});
-
 function toHomePage() {
-    var homePage = "indexmain.html#home";
+    var homePage = "index.html#home";
     window.location.href = homePage;
 };
 
 function toCategoriesPage() {
-    var categoriesPage = "indexmain.html#categories";
+    var categoriesPage = "index.html#categories";
     window.location.href = categoriesPage;
 }
 
 function toProductsPage() {
-    var productsPage = "indexmain.html#products";
+    var productsPage = "index.html#products";
     window.location.href = productsPage;
 }
 
 function toAboutPage() {
-    var aboutPage = "indexmain.html#about";
+    var aboutPage = "index.html#about";
     window.location.href = aboutPage;
 }
 
 function toCustomersPage() {
-    var customersPage = "indexmain.html#customers";
+    var customersPage = "index.html#customers";
     window.location.href = customersPage;
 }
 
