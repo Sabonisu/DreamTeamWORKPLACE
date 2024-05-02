@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>All Products - Delicacy</title>
+</head>
+<body class="menu1">
+    <!-- Navbar-->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
+        <!--Menu Icon-->
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--Nav List-->
+        <ul class="navbar">
+            <li><a href="indexmain.html">Home</a></li>
+            <li><a href="menu1.html">All Products</a></li>
+            <li><a href="indexmain.html#products">Categories</a></li>
+            <li><a href="indexmain.html#about">About</a></li>
+            <li><a href="indexmain.html#customers">Customers</a></li>
+        </ul>
+        <!--Profile-->
+        <div class="profile">
+            <img src="img/profile.jpg" alt="">
+            <span>moorminsu</span>
+            <i class='bx bx-caret-down'></i>
+        </div>
+    </header>
+
+    <section class="products" id="products">
+        <div class="heading">
+            <h1>All Products</h1> 
+ 
+                 
+        </div>
+        <!-- Sorting -->
+        <div class="sorting">
+            <label for="sort">Sort by:</label>
+            <select id="sort" onchange="sortProducts()">
+                <option value="price">Price</option>
+                <option value="name">Name</option>
+            </select>
+            <select id="menu-category" onchange="filterMenu()">
+                <option value="all">All Categories</option>
+                <option value="breakfasts"><a href="#breakfasts">Breakfasts</a></option>
+                <option value="lunches">Lunches</option>
+                <option value="dinners">Dinners</option>
+                <option value="desserts">Desserts</option>
+                <option value="drinks">Drinks</option>
+            </select>
+        </div>
+        <!--Products Content-->
+        <div class="products-container">
+            <!-- Product 1 -->
+            <div class="box breakfasts" >
+                <img src="img/p1.jpg" alt="">
+                <span>Breakfasts</span>
+                <h2>Farm fresh organic fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-25%</span>
+            </div>
+                            <!-- Product 2 -->
+            <div class="box breakfasts">
+                <img src="img/p1.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Organic vegetables mix 500g</h2>
+                <h3 class="price">$5.49 <span>/pack</span></h3>
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+            <!-- Product 3 -->
+            <div class="box">
+                <img src="img/p1.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Hand-picked berries assortment 300g</h2>
+                <h3 class="price">$9.99 <span>/box</span></h3>
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-10%</span>
+            </div>
+            <!-- Product 4 -->
+            <div class="box">
+                <img src="img/p1.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Locally sourced honey 500ml</h2>
+                <h3 class="price">$12.99 <span>/bottle</span></h3>
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+            <!-- Product 5 -->
+            <div class="box">
+                <img src="img/p1.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Artisanal bread selection</h2>
+                <h3 class="price">$3.99 <span>/loaf</span></h3>
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-heart'></i>
+        
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <div class="footer-box">
+            <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
+            <p>GymVast, 50th Street, 4th <br> Floor, NYC 10022</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h2>Categories</h2>
+            <a href="#">Fruits</a>
+            <a href="#">Products</a>
+            <a href="#">Package Food</a>
+            <a href="#">Beverage</a>
+        </div>
+        <div class="footer-box">
+            <h2>Useful Links</h2>
+            <a href="#">Payment & Tax</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">My Blog</a>
+            <a href="#">Return Policy</a>
+        </div>
+        <div class="footer-box">
+            <h2>Newsletter</h2>
+            <p>Get 10% Discount with <br> Email Newsletter</p>
+            <form action="">
+                <i class='bx bxs-envelope'></i>
+                <input type="email" name="" id="" placeholder="Enter Your Email">
+                <i class='bx bx-arrow-back bx-rotate-180' ></i>
+            </form>
+        </div>
+    </footer>
+
+
+
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; CarpoolVenom All Right Reserved.</p>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+
+</body>
+</html>
