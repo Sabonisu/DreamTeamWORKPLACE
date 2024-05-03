@@ -316,7 +316,9 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-
+.products .heading a:hover{
+    cursor: pointer;
+}
 .products-conatiner{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
@@ -372,6 +374,7 @@ header{
 .products-conatiner .box .bx-cart:hover{
     background: var(--orange-color);
     transition: 0.2s all linear;
+    cursor: pointer;
 }
 
 .products-conatiner .box .bx-heart{

@@ -18,6 +18,7 @@ let productsNav = document.querySelector('.productsNav');
 let aboutNav = document.querySelector('.aboutNav');
 let customersNav = document.querySelector('.customersNav');
 
+
 const navLinks = document.querySelectorAll('.navbar li a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -81,3 +82,14 @@ function toLogIn() {
     var customersPage = "login.html";
     window.location.href = customersPage;
 }
+
+
+let profile2 = document.querySelector('.profile2');
+profile2.addEventListener('click', () => {
+    profile2.classList.toggle('show');
+});
+
+let profCartBtn = document.querySelector('.profCart');
+profCartBtn.addEventListener('click', () =>{
+    body.classList.toggle('showCart');
+})

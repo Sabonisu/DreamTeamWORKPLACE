@@ -22,3 +22,9 @@ var swiper = new Swiper(".home", {
     navbar.classList.remove('active');
   }
 
+//лінк на продукти
+  let productsPage = document.querySelector('.customersNav');
+  function toProducts() {
+    var prodPage = "product_page.html";
+    window.location.href = prodPage;
+};
