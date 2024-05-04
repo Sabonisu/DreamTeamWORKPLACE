@@ -1,0 +1,60 @@
+                    <!--Box 1-->
+                    <div class="box">
+                        <img src="img/p1.jpg" alt="">
+                        <span>Fresh Items</span>
+                        <h2>Farm fresh organic <br> fruits 250g</h2>
+                        <h3 class="price">$7.99 <span>/kg</span></h3>
+                        <i class='bx bx-cart openCart'></i>
+                        <i class='bx bx-heart'></i>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <!--Box 2-->
+                    <div class="box">
+                        <img src="img/p1.jpg" alt="">
+                        <span>Fresh Items</span>
+                        <h2>Farm fresh organic <br> fruits 250g</h2>
+                        <h3 class="price">$7.99 <span>/kg</span></h3>
+                        <i class='bx bx-cart openCart'></i>
+                        <i class='bx bx-heart'></i>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <!--Box 3-->
+                    <div class="box">
+                        <img src="img/p1.jpg" alt="">
+                        <span>Fresh Items</span>
+                        <h2>Farm fresh organic <br> fruits 250g</h2>
+                        <h3 class="price">$7.99 <span>/kg</span></h3>
+                        <i class='bx bx-cart openCart'></i>
+                        <i class='bx bx-heart'></i>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <!--Box 4-->
+                    <div class="box">
+                        <img src="img/p1.jpg" alt="">
+                        <span>Fresh Items</span>
+                        <h2>Farm fresh organic <br> fruits 250g</h2>
+                        <h3 class="price">$7.99 <span>/kg</span></h3>
+                        <i class='bx bx-cart openCart'></i>
+                        <i class='bx bx-heart'></i>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <!--Box 5-->
+                    <div class="box">
+                        <img src="img/p1.jpg" alt="">
+                        <span>Fresh Items</span>
+                        <h2>Farm fresh organic <br> fruits 250g</h2>
+                        <h3 class="price">$7.99 <span>/kg</span></h3>
+                        <i class='bx bx-cart openCart'></i>
+                        <i class='bx bx-heart'></i>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <!--Box 6-->
+                    <div class="box">
+                        <img src="img/p1.jpg" alt="">
+                        <span>Fresh Items</span>
+                        <h2>Farm fresh organic <br> fruits 250g</h2>
+                        <h3 class="price">$7.99 <span>/kg</span></h3>
+                        <i class='bx bx-cart openCart'></i>
+                        <i class='bx bx-heart'></i>
+                        <span class="discount">-25%</span>
+                    </div>

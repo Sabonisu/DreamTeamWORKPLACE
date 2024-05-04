@@ -103,11 +103,16 @@ header{
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     display: none;
 }
 .show .prof_menu {
     display:block;
 }
+.prof_menu li{
+    border-radius: 8px;
+}
+
 .prof_menu li:hover{
     transition: padding-left .1s ease;
 }
