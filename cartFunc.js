@@ -1,4 +1,4 @@
-let listProductHTML = document.querySelector('.products-conatiner');
+let listProductHTML = document.querySelector('.page');
 let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.icon-cart span');
 let products = [];
@@ -33,7 +33,40 @@ let cart = [];
             addToCart(id_product);
         }
     })
-const addToCart = (product_id) => {
+
+
+
+listCartHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
+        let product_id = positionClick.parentElement.parentElement.dataset.id;
+        let type = 'minus';
+        if(positionClick.classList.contains('plus')){
+            type = 'plus';
+        }
+        changeQuantityCart(product_id, type);
+    }
+})
+
+
+const initApp = () => {
+    // get data product
+    fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        addDataToHTML();
+
+        // get data cart from memory
+        if(localStorage.getItem('cart')){
+            cart = JSON.parse(localStorage.getItem('cart'));
+            addCartToHTML();
+        }
+    })
+}
+initApp();
+
+ const addToCart = (product_id) => {
     let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id);
     if(cart.length <= 0){
         cart = [{
@@ -51,10 +84,10 @@ const addToCart = (product_id) => {
     addCartToHTML();
     addCartToMemory();
 }
-const addCartToMemory = () => {
+ const addCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
-const addCartToHTML = () => {
+ const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
     if(cart.length > 0){
@@ -83,21 +116,13 @@ const addCartToHTML = () => {
             `;
         })
     }
-    iconCartSpan.innerText = totalQuantity;
-}
 
-listCartHTML.addEventListener('click', (event) => {
-    let positionClick = event.target;
-    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
-        let product_id = positionClick.parentElement.parentElement.dataset.id;
-        let type = 'minus';
-        if(positionClick.classList.contains('plus')){
-            type = 'plus';
-        }
-        changeQuantityCart(product_id, type);
-    }
-})
-const changeQuantityCart = (product_id, type) => {
+    if(iconCartSpan) {
+        iconCartSpan.innerText = totalQuantity;
+      }
+      
+}
+ const changeQuantityCart = (product_id, type) => {
     let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
     if(positionItemInCart >= 0){
         let info = cart[positionItemInCart];
@@ -119,20 +144,3 @@ const changeQuantityCart = (product_id, type) => {
     addCartToHTML();
     addCartToMemory();
 }
-
-const initApp = () => {
-    // get data product
-    fetch('products.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        addDataToHTML();
-
-        // get data cart from memory
-        if(localStorage.getItem('cart')){
-            cart = JSON.parse(localStorage.getItem('cart'));
-            addCartToHTML();
-        }
-    })
-}
-initApp();
