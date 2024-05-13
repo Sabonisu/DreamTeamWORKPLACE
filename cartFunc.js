@@ -120,8 +120,7 @@ initApp();
     if(iconCartSpan) {
         iconCartSpan.innerText = totalQuantity;
       }
-      
-}
+    }
  const changeQuantityCart = (product_id, type) => {
     let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
     if(positionItemInCart >= 0){

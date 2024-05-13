@@ -99,7 +99,9 @@ const addCartToHTML = () => {
           `;
       })
   }
-  iconCartSpan.innerText = totalQuantity;
+  if(iconCartSpan) {
+    iconCartSpan.innerText = totalQuantity;
+  }
 }
 const changeQuantityCart = (product_id, type) => {
   let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
