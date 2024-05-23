@@ -37,25 +37,21 @@
                 <form action="">
                     <h1>Sign in</h1>
                     <div class="input-box">
-                        <input id="emailInput" type="text" placeholder="Email" required>
+                        <input class="emailInput" type="text" placeholder="Email" required>
                         <i class='bx bxs-user'></i>
                     </div>
-                    <div class ="input-box">
-                        <input id="passwordInput" type="password" placeholder="Password" required>
-                        <i class='bx bxs-lock-alt' ></i>
+                    <div class="input-box">
+                        <input class="passwordInput" type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
                     </div>
-                    <div class ="input-box">
-                        <input id="passwordInput" type="password" placeholder="Reenter password" required>
-                        <i class='bx bxs-lock-alt' ></i>
-                    </div>
+                    
                     <div class="remember-forgot">
                         <label><input type="checkbox">Remember me</label>
                     </div>
-                    <button type="submit" class="btn"><a href="indexMain1.html">Register</a></button>
-
+                    <button id="signinBtn" class="btn">Rgister</button>
+                    <div id="errorMessage" class="errorMes"></div>
                 </form>
             </div>
-            <script src="log.js"></script>
         </section>   
         <selection class="footer" id="footer">
             <div class="footer-box">
@@ -105,6 +101,6 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <!--Link To JS-->
-        <script src="main.js"></script>
+        <script src="register.js"></script>
 </body>
 </html>

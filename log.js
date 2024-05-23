@@ -1,40 +1,28 @@
-// let emailInput = document.querySelector('.emailInput');
-// let passwordInput = document.querySelector('.passwordInput');
 let homeNav = document.querySelector('.btn');
 
-
-    // Якщо значення не встановлене, встановлюємо його в false
-
-
-// emailInput.addEventListener('input', toggleButton);
-// passwordInput.addEventListener('input', toggleButton);
-
-// function toggleButton() {
-//     const email = emailInput.value;
-//     const password = passwordInput.value;
-
-//     if (email.trim() !== '' && password.trim() !== '') {
-//         loginBtn.removeAttribute('disabled');
-//     } else {
-//         loginBtn.setAttribute('disabled', true);
-//     }
-// }
-
 homeNav.addEventListener('click', () => {
-    localStorage.setItem('isLoggedIn', true);
-    // const email = emailInput.value.trim();
-    // const password = passwordInput.value.trim();
+  let emailInput = document.querySelector('.emailInput').value;
+  let passwordInput = document.querySelector('.passwordInput').value;
 
-    // if (email !== '' && password !== '') {
-        toHomePage();
-    // }
+  if (emailInput.trim() !== '' && passwordInput.trim() !== '') {
+    for (let i = 1; i <= 100; i++) {
+      let storedEmail = localStorage.getItem(`email${i}`);
+      let storedPassword = localStorage.getItem(`password${i}`);
+
+      if (storedEmail && storedPassword && emailInput === storedEmail && passwordInput === storedPassword) {
+        localStorage.setItem('isLoggedIn', true);
+        setTimeout(toHomePage, 0); // викликати toHomePage через короткий проміжок часу
+        return; // Зупинити цикл, якщо знайдено відповідність
+      }
+    }
+
+    alert('Incorrect email or password. Please try again.');
+  } else {
+    alert('Email and password cannot be empty.');
+  }
 });
 
-
-
 function toHomePage() {
-    var homePage = "index.html";
-    window.location.href = homePage;
+  var homePage = "index.html";
+  window.location.href = homePage;
 };
-
-// disabled="True"
