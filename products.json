@@ -1,59 +1,59 @@
 [
     {
         "id": 1,
-        "name":" Dish 1",
-        "price": 200,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":" Rague wiht eggs and sauasges ",
+        "price": 11.99,
+        "weight":20,
+        "image": "img/cat1.jpg"
     },
     {
         "id": 2,
-        "name":" Dish 2",
-        "price": 250,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":" Tofu soup ",
+        "price": 15.11,
+        "weight":25,
+        "image": "img/cat2.jpg"
     },
     {
         "id": 3,
-        "name":" Dish 3",
-        "price": 290,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":" Eggs bacon and sausage ",
+        "price": 7.99,
+        "weight":25,
+        "image": "img/cate1.jpg"
     },
     {
         "id": 4,
-        "name":" Dish 4",
-        "price": 200,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":"Chicken brine ",
+        "price": 16.99,
+        "weight":30,
+        "image": "img/cate2.jpg"
     },
     {
         "id": 5,
-        "name":" Dish 5",
-        "price": 300,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":"All natural icecream ",
+        "price": 6.99,
+        "weight":15,
+        "image": "img/cate3.jpg"
     },
     {
         "id": 6,
-        "name":" Dish 6",
-        "price": 200,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":"iced uzvar ",
+        "price": 3.99,
+        "weight":10,
+        "image": "img/pcate4.jpg"
     },
     {
         "id": 7,
-        "name":" Dish 7",
-        "price": 200,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":"Macaroni and maet",
+        "price": 14.99,
+        "weight":35,
+        "image": "img/cate5.jpg"
     },
     {
         "id": 8,
-        "name":" Dish 8",
-        "price": 200,
-        "weight":250,
-        "image": "img/p1.jpg"
+        "name":"Pasta",
+        "price": 15.00,
+        "weight":30,
+        "image": "img/cate12.jpg"
     }
 
 ]
